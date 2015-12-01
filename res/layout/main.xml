@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/room"
+   >
+   <!-- 游戏主界面的自定组件  -->
+   <com.example.link.View.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/room"           
+        />
+  
+    <!-- 水平排列的LinearLayout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="380dp"
+    android:background="#1e72bb"
+    android:gravity="center_vertical"
+       > 
+       <Button
+           android:id="@+id/startButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/button_selector"         
+           />
+           <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+           		android:gravity="center"
+           		android:textSize="20dp"
+           		android:width="150dp"
+           		android:textColor="#ff9"
+               />
+ 	</LinearLayout>
+</RelativeLayout>
